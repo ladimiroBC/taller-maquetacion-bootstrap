@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.jpg">
+    <link rel="stylesheet" href="js/main.js">
   </head>
   <body class="d-flex flex-column">
     <header>
@@ -46,9 +47,70 @@
         </div>
       </nav>
     </header>
-    <main class="flex-grow-1 pt-3">
+    <main class="flex-grow-1 pt-3 bg-gradient-main">
+      <section class="section-carousel-main">
+        <!-- Carousel -->
+       <div id="responsiveCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/section-carousel-img-1-768w.jpg">
+                  <source media="(min-width: 768px)" srcset="img/section-carousel-img-1-1900w.jpg">
+                  <img src="img/section-carousel-img-1-768w.jpg" class="d-block w-100" alt="Imagen 1">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/section-carousel-img-2-768w.jpg">
+                  <source media="(min-width: 768px)" srcset="img/section-carousel-img-2-1900w.jpg">
+                  <img src="img/section-carousel-img-2-768w.jpg" class="d-block w-100" alt="Imagen 2">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/section-carousel-img-3-768w.jpg">
+                  <source media="(min-width: 768px)" srcset="img/section-carousel-img-3-1900w.jpg">
+                  <img src="img/section-carousel-img-3-768w.jpg" class="d-block w-100" alt="Imagen 3">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/section-carousel-img-4-768w.jpg">
+                  <source media="(min-width: 768px)" srcset="img/section-carousel-img-4-1900w.jpg">
+                  <img src="img/section-carousel-img-4-768w.jpg" class="d-block w-100" alt="Imagen 4">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/section-carousel-img-5-768w.jpg">
+                  <source media="(min-width: 768px)" srcset="img/section-carousel-img-5-1900w.jpg">
+                  <img src="img/section-carousel-img-5-768w.jpg" class="d-block w-100" alt="Imagen 5">
+                </picture>
+              </div>
+            </div>
+        </div>
+        <!-- Lista de botones -->
+        <ul class="list-inline mt-3 text-center">
+            <li class="list-inline-item">
+              <button type="button" class="btn-list-carousel" data-bs-target="#responsiveCarousel" data-bs-slide-to="0" aria-label="slide-1"></button>
+            </li>
+            <li class="list-inline-item">
+              <button type="button" class="btn-list-carousel" data-bs-target="#responsiveCarousel" data-bs-slide-to="1" aria-label="slide-2"></button>
+            </li>
+            <li class="list-inline-item">
+              <button type="button" class="btn-list-carousel" data-bs-target="#responsiveCarousel" data-bs-slide-to="2" aria-label="slide-3"></button>
+            </li>
+            <li class="list-inline-item">
+              <button type="button" class="btn-list-carousel" data-bs-target="#responsiveCarousel" data-bs-slide-to="3" aria-label="slide-4"></button>
+            </li>
+            <li class="list-inline-item">
+              <button type="button" class="btn-list-carousel" data-bs-target="#responsiveCarousel" data-bs-slide-to="4" aria-label="slide-5"></button>
+            </li>
+        </ul>
+      </section>
       <div class="container">
-      <p>main</p>
+        
       </div>
     </main>
     <footer class="bg-dark">
