@@ -88,6 +88,10 @@ footer {
   background-color: var(--color-dropdown-item-hover);
 }
 
+.card {
+  min-width: 300px;
+  flex: 0 0 auto;
+}
 /***Bootstrap styles(end)***/
 
 /***Styles project(start)***/
@@ -125,6 +129,26 @@ footer {
 
 .list-inline .list-inline-item .btn-list-carousel.active {
   background-color: var(--color-btn-list-carousel-active);
+}
+
+.card-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.card-slider::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.card-slider::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
 .footer-nav-item {
