@@ -92,6 +92,11 @@ footer {
   min-width: 300px;
   flex: 0 0 auto;
 }
+
+.card-img {
+  object-fit: contain;
+  height: 175px;
+}
 /***Bootstrap styles(end)***/
 
 /***Styles project(start)***/
@@ -170,6 +175,10 @@ No media query for `xs` since this is the default in Bootstrap*/
 
   .nav-link:hover {
     color: var(--color-link-menu-nav-item-hover);
+  }
+
+  .card-img {
+    height: 250px;
   }
 
   .footer-nav-item {
