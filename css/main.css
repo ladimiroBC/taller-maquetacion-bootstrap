@@ -93,7 +93,7 @@ footer {
   flex: 0 0 auto;
 }
 
-.card-img {
+.card-img, .card-img-top {
   object-fit: contain;
   height: 175px;
 }
@@ -121,7 +121,7 @@ footer {
 }
 
 .list-inline {
-  padding-top: 1rem; /* Espacio entre carousel y lista de botones */
+  padding-top: 1rem;
 }
 
 .btn-list-carousel {
@@ -177,7 +177,7 @@ No media query for `xs` since this is the default in Bootstrap*/
     color: var(--color-link-menu-nav-item-hover);
   }
 
-  .card-img {
+  .card-img, .card-img-top {
     height: 250px;
   }
 
@@ -190,6 +190,18 @@ No media query for `xs` since this is the default in Bootstrap*/
 @media (min-width: 992px) { 
   .carousel-item img {
     height: 450px;
+  }
+
+  .card-slider {
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+
+  .card-slider:hover {
+    overflow-x: auto;
+    transform: scale(1.01); 
+    opacity: 1; 
   }
 }
 
