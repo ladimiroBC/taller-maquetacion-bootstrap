@@ -1,0 +1,63 @@
+/***Custom properties(start)***/
+:root {
+  --color-primary: rgb(168, 196, 168);
+  --color-secondary: rgb(227, 180, 149);
+  --color-tertiary: rgb(255, 200, 0);
+
+  --color-link-menu-nav-item: rgb(234, 241, 241);
+  --color-link-menu-nav-item-hover: rgb(7, 97, 99);
+  --color-dropdown-bg: rgb(206, 245, 245);
+  --color-dropdown-item-hover: rgb(53, 80, 80);
+
+  --color-btn-list-carousel-inactive: rgba(179, 178, 178, 0.15);
+  --color-btn-list-carousel-active: rgb(176, 172, 172);
+  
+  --color-footer-text: #fff;
+
+  --color-primary-opacity: rgba(34, 85, 34, 0.65);
+  --color-secondary-opacity: rgba(120, 72, 24, 0.65);
+  --color-tertiary-opacity: rgba(255, 200, 0, 0.65);
+}
+/***Custom properties(end)***/
+
+/***Reset style(start)***/
+.anchor-link {
+  color: var(--color-secondary);
+}
+/***Reset style(end)***/
+
+/***Bootstrap styles(start)***/
+
+/***Bootstrap styles(end)***/
+
+/***Styles project(start)***/
+
+/***Styles project(end)***/
+
+/*X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+  
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
+
+}
