@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="/img/favicon.jpg">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/construccion-plomeria.css">
+  <link rel="stylesheet" href="/css/category.css">
   <title>Construccion y plomeria</title>
 </head>
 <body class="d-flex flex-column">
@@ -33,14 +33,14 @@
                 Categorias
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="construccion-plomeria.html">Construcción y Plomeria</a></li>
-                <li><a class="dropdown-item" href="pisos-pinturas.html">Pisos y Pinturas</a></li>
-                <li><a class="dropdown-item" href="herramientas.html">Herramientas</a></li>
-                <li><a class="dropdown-item" href="baños-cocinas.html">Baños y Cocina</a></li>
+                <li><a class="dropdown-item" href="/html/categorys/categorys.html" data-category="construction-plumbing">Construcción y Plomeria</a></li>
+                <li><a class="dropdown-item" href="/html/categorys/categorys.html" data-category="floors-paintings">Pisos y Pinturas</a></li>
+                <li><a class="dropdown-item" href="/html/categorys/categorys.html" data-category="tools">Herramientas</a></li>
+                <li><a class="dropdown-item" href="/html/categorys/categorys.html" data-category="bathrooms-kitchen">Baños y Cocina</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/contacto/contact.html">Contacto</a>
+              <a class="nav-link" href="./html/contact/contact.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -52,12 +52,12 @@
       <div>
         <a class="anchor-link" href="/index.html">Home </a>
         <i class="bi bi-chevron-right"></i>
-        <a class="anchor-link" href="construccion-plomeria.html"> Construcción y Plomeria</a>
+        <a class="anchor-link" data-category="construction-plumbing"> Construcción y Plomeria</a>
       </div>
       <div class="row">
         <aside class="col-sm-12 border border-1 rounded bg-light mt-2">
           <div class="d-flex justify-content-between border-bottom">
-            <span>Construcción y plomeria</span>
+            <span>xxxx</span>
             <span>Resultados(xxxx)</span> 
           </div>
           <div class="d-flex justify-content-between">
@@ -81,7 +81,7 @@
             </div>
           </div>
         </aside>
-        <section class="col-sm-12 py-2 bg-light">
+        <section class="col-sm-12 py-2 bg-light products-container">
           <section class="row border-bottom">
             <div class="col-4">
               <img src="/img/page-construccion-plomeria-pintuco-esmalte-domestico.JPG" class="img-fluid" alt="img-product">
@@ -140,9 +140,9 @@
         <nav class="col-md col-lg footer-nav-item text-md-center">
           <p class="h5">Información</p>
           <ul class="nav flex-column gap-2">
-            <li><a href="/html/informacion/terminos.html" class="fs-6 p-0">Terminos y condiciones</a></li>
-            <li><a href="/html/informacion/nosotros.html" class="fs-6 p-0">Sobre nosotros</a></li>
-            <li><a href="/html/informacion/proveedores.html" class="fs-6 p-0">Nuestros proveedores</a></li>
+            <li><a href="/html/information/information.html" data-information="terms-conditions" class="fs-6 p-0">Terminos y condiciones</a></li>
+            <li><a href="/html/information/information.html" data-information="about-us" class="fs-6 p-0">Sobre nosotros</a></li>
+            <li><a href="/html/information/information.html" data-information="our-suppliers" class="fs-6 p-0">Nuestros proveedores</a></li>
           </ul>
         </nav>
         <nav class="col-md col-lg footer-nav-item text-md-center">
@@ -156,6 +156,7 @@
       </div>
     </div>
   </footer>
+  <script src="../../js/category.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

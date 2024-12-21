@@ -1,0 +1,46 @@
+{
+  "construction-plumbing": [
+    {
+      "id": 1,
+      "mark": "KNAUF",
+      "description": "Placa de yeso ST 1/2pg Knauf.",
+      "price": "$39.900 und",
+      "image": "../img/page-construccion-plomeria-placa-yeso-knauf.JPG"
+    },
+    {
+      "id": 2,
+      "mark": "PINTUCO",
+      "description": "Pintura Esmalte Domestico Mate Blanco 6w 1/4 Gal.",
+      "price": "$34.900 und",
+      "image": "../img/page-construccion-plomeria-pintuco-esmalte-domestico.JPG"
+    },
+    {
+      "id": 3,
+      "mark": "CORONA",
+      "description": "Pintura para interior super lavable Max Blanco 2.5 Gal.",
+      "price": "$210.900 und",
+      "image": "../img/page-construccion-plomeria-corona-pintura-blanca-lavable.JPG"
+    },
+    {
+      "id": 4,
+      "mark": "SIKA",
+      "description": "Sika-1 aditivo impermeabilizante para morteros 20kg.",
+      "price": "$294.900 und",
+      "image": "../img/page-construccion-plomeria-sika-aditivo-impermeable.JPG"
+    },
+    {
+      "id": 5,
+      "mark": "ARGOS",
+      "description": "Cemento Argos Gris 50kg.",
+      "price": "$30.000 und",
+      "image": "../img/page-construccion-plomeria-argos-cemento-gris-50kg.JPG"
+    },
+    {
+      "id": 6,
+      "mark": "DURMAN",
+      "description": "Tubo Sanitario 6' X 3M.",
+      "price": "$95.000",
+      "image": "../img/page-construccion-plomeria-tubo-sanitario-6pulg-durman.JPG"
+    }
+  ]
+}
