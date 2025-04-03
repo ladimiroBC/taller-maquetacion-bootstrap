@@ -1,41 +1,60 @@
-// Archivo: category.js
-
 document.addEventListener("DOMContentLoaded", () => {
-  const selectedCategory = localStorage.getItem("selectedCategory");
+  // Obtener parámetros de la URL
+  const params = new URLSearchParams(window.location.search);
+  const selectedCategory = params.get("category"); // Captura la categoría de la URL
 
+  // Validar si hay una categoría seleccionada
   if (!selectedCategory) {
-    console.error("No se encontró la categoría seleccionada.");
+    console.error("No se encontró la categoría en la URL.");
+    document.querySelector(".products-container").innerHTML =
+      "<p class='text-center'>Por favor, selecciona una categoría.</p>";
     return;
   }
-
+  // Mapeo de nombres de categorías
   const categoryNameMap = {
-    "construction-plumbing": "Construcción y Plomeria",
-    "floor-paints": "Pisos y Pinturas",
-    "tools": "Herramientas",
-    "bathroom-kitchens": "Baños y Cocina"
+    construction_plumbing: "Construcción y Plomería",
+    floors_painting: "Pisos y Pinturas",
+    tools: "Herramientas",
+    bathrooms_kitchens: "Baños y Cocinas"
   };
 
+  // Obtener nombre de la categoría
   const categoryTitle = categoryNameMap[selectedCategory] || "Categoría no encontrada";
-  const breadcrumbCategory = document.querySelector("a[data-category]");
-  const productsContainer = document.querySelector('.products-container');
 
-  // Actualizar el breadcrumb con el nombre de la categoría seleccionada
+  // Actualizar breadcrumb con la categoría seleccionada
+  const breadcrumbCategory = document.querySelector(
+    ".breadcrumb a[data-category]"
+  );
   if (breadcrumbCategory) {
     breadcrumbCategory.textContent = categoryTitle;
-    breadcrumbCategory.href = `categorys.html?category=${selectedCategory}`;
+    breadcrumbCategory.href = `categories.html?category=${selectedCategory}`;
+    breadcrumbCategory.setAttribute("data-category", selectedCategory);
+  }
+
+  // Actualizar el nombre de la categoría y los resultados
+  const categoryNameElement = document.querySelector("#category-name");
+  const resultCountElement = document.querySelector("#result-count");
+
+  if (categoryNameElement) {
+    categoryNameElement.textContent = `${categoryTitle}`;
   }
 
   // Cargar productos desde el archivo JSON
-  fetch("../data/products.json")
-    .then(response => {
+  fetch("/data/products.json")
+    .then((response) => {
       if (!response.ok) throw new Error("Error al cargar los datos");
       return response.json();
     })
-    .then(data => {
+    .then((data) => {
       const products = data[selectedCategory] || [];
-      renderProducts(productsContainer, products);
+
+      if (resultCountElement) {
+        resultCountElement.textContent = `Resultados: ${products.length}`;
+      }
+
+      renderProducts(document.querySelector(".products-container"), products);
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error al cargar los productos:", error);
     });
 });
@@ -49,7 +68,7 @@ function renderProducts(container, products) {
     return;
   }
 
-  products.forEach(product => {
+  products.forEach((product) => {
     const productHTML = `
       <section class="row border-bottom mt-2">
         <div class="col-4">
